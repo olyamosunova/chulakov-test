@@ -1,0 +1,45 @@
+{
+  "name": "chulakov",
+  "version": "1.0.0",
+  "description": "test exercise for CHULAKOV STUDIO",
+  "homepage": "http://olyamosunova.github.io/chulakov",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mosunova Olya",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "7.13.0",
+    "@babel/core": "7.10.2",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
+    "@babel/preset-env": "7.13.5",
+    "@babel/preset-react": "7.12.13",
+    "babel-loader": "8.2.2",
+    "copy-webpack-plugin": "^8.1.0",
+    "css-loader": "5.0.2",
+    "gh-pages": "^3.1.0",
+    "html-webpack-plugin": "5.2.0",
+    "mini-css-extract-plugin": "1.3.8",
+    "node-sass": "5.0.0",
+    "postcss-loader": "4.1.0",
+    "redux-devtools-extension": "^2.13.8",
+    "sass-loader": "11.0.1",
+    "style-loader": "2.0.0",
+    "webpack": "5.24.1",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.2"
+  },
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-redux": "7.2.2",
+    "react-router-dom": "^5.1.2",
+    "redux": "4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
+}

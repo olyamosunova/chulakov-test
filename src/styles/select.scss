@@ -1,0 +1,128 @@
+$background-color: #1a3c34;
+$active-background-color: #ffffff;
+$active-color-text: #1a3c34;
+$color-text: #ffffff;
+
+.select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+
+  &.select--open {
+    .select__placeholder {
+      border-radius: 3px 3px 0 0;
+    }
+
+    .select__placeholder::after {
+      top: calc(50% - 2px);
+      transform: rotate(225deg);
+    }
+
+    .select__body {
+      display: block;
+    }
+  }
+}
+
+.select__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  max-height: 150px;
+
+  list-style: none;
+  overflow-y: auto;
+  scrollbar-color: $background-color $active-background-color;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: auto;
+  }
+  &::-webkit-scrollbar-track {
+    background: $active-background-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $background-color;
+  }
+}
+
+.select__placeholder {
+  position: relative;
+  color: $color-text;
+
+  background-color: $background-color;
+  border-radius: 3px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 5px);
+    right: 17px;
+    display: block;
+    width: 7px;
+    height: 7px;
+
+    border-right: 1px solid $color-text;
+    border-bottom: 1px solid $color-text;
+
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-out;
+  }
+}
+
+.select__text {
+  width: 100%;
+  display: block;
+  padding: 16px 40px 16px 24px;
+
+  color: $color-text;
+
+  font-size: inherit;
+  line-height: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+  outline: none;
+}
+
+.select__body {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding: 5px 0;
+
+  background-color: $background-color;
+  border-radius: 0 0 3px 3px;
+}
+
+.select__item {
+  padding: 8px 32px 8px 24px;
+
+  color: $color-text;
+  background-color: $background-color;
+
+  opacity: 1;
+
+  transition: all 0.3s ease-out;
+
+  cursor: pointer;
+  outline: none;
+
+  &--active {
+    opacity: 0.5;
+
+    cursor: auto;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}

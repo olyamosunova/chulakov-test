@@ -1,0 +1,106 @@
+$border-color: #1a3c34;
+$active-filter-color: #1a3c34;
+$active-text-color: #ffffff;
+$background-color: #ffffff;
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  font-size: 16px;
+  line-height: 18px;
+
+  @media only screen and (max-width: 475px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.filter__sort {
+  width: calc(100% - 250px);
+
+  @media only screen and (max-width: 767px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 475px) {
+    width: 100%;
+  }
+}
+
+.filter__blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 475px) {
+    flex-direction: column;
+  }
+
+  .select {
+    width: calc(50% - 15px);
+    max-width: 250px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+
+    @media only screen and (max-width: 767px) {
+      width: calc(100% - 15px);
+      max-width: 350px;
+    }
+
+    @media only screen and (max-width: 475px) {
+      width: 100%;
+    }
+
+    &:first-of-type:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.filter__tabs {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+
+  .select {
+    width: 100%;
+    min-width: 250px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 475px) {
+    width: 100%;
+  }
+}
+
+.filter__name {
+  width: calc(100% - 265px);
+  max-width: 515px;
+  margin: 20px 0 0;
+
+  @media only screen and (max-width: 767px) {
+    width: calc(50% - 15px);
+    max-width: 350px;
+  }
+
+  @media only screen and (max-width: 475px) {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.filter__title {
+  margin: 10px 0;
+}

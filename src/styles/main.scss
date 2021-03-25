@@ -1,0 +1,53 @@
+$body-color: #f4f3f0;
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: YanoneKaffeesatz, Arial, sans-serif;
+    background-color: $body-color;
+
+    button,
+    input,
+    textarea {
+        font-family: YanoneKaffeesatz, Arial, sans-serif;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 991px) {
+        padding: 0 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 0 10px;
+    }
+}
+
+.favorite-button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+
+    &:hover,
+    &:focus {
+        opacity: 0.6;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+
+        object-fit: contain;
+        object-position: center;
+    }
+}
