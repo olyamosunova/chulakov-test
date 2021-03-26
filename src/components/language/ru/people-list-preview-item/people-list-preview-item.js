@@ -21,7 +21,7 @@ const PeopleListPreviewItemRu = ({user}) => {
                 :
                 <Fragment>
                     <div className="preview-list__user">
-                        <img className="preview-list__avatar" src={`src/assets/images/${image}.svg`} alt={name} />
+                        <img className="preview-list__avatar" src={`./images/${image}.svg`} alt={name} />
                         <p>{name}</p>
                         <button className="preview-list__favorite favorite-button" type="button" onClick={changeFavourite}>
                             <img src={`./images/${isFavouriteIconSrc}.svg`} alt="icon favourite" />

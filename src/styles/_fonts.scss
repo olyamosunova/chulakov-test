@@ -2,9 +2,9 @@
   font-family: "YanoneKaffeesatz";
   src:
       local("YanoneKaffeesatz Bold"),
-    url("src/assets/fonts/YanoneKaffeesatz-Bold.woff2") format("woff2"),
-      url("src/assets/fonts/YanoneKaffeesatz-Bold.woff") format("woff"),
-      url("src/assets/fonts/YanoneKaffeesatz-Bold.ttf") format("ttf");
+    url("./fonts/YanoneKaffeesatz-Bold.woff2") format("woff2"),
+      url("./fonts/YanoneKaffeesatz-Bold.woff") format("woff"),
+      url("./fonts/YanoneKaffeesatz-Bold.ttf") format("ttf");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -14,9 +14,9 @@
   font-family: "YanoneKaffeesatz";
   src:
       local("YanoneKaffeesatz Regular"),
-      url("src/assets/fonts/YanoneKaffeesatz-Regular.woff2") format("woff2"),
-      url("src/assets/fonts/YanoneKaffeesatz-Regular.woff") format("woff"),
-      url("src/assets/fonts/YanoneKaffeesatz-Regular.ttf") format("ttf");
+      url("./fonts/YanoneKaffeesatz-Regular.woff2") format("woff2"),
+      url("./fonts/YanoneKaffeesatz-Regular.woff") format("woff"),
+      url("./fonts/YanoneKaffeesatz-Regular.ttf") format("ttf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -26,9 +26,9 @@
   font-family: "YanoneKaffeesatz";
   src:
       local("YanoneKaffeesatz Light"),
-      url("src/assets/fonts/YanoneKaffeesatz-Light.woff2") format("woff2"),
-      url("src/assets/fonts/YanoneKaffeesatz-Light.woff") format("woff"),
-      url("src/assets/fonts/YanoneKaffeesatz-Light.ttf") format("ttf");
+      url("./fonts/YanoneKaffeesatz-Light.woff2") format("woff2"),
+      url("./fonts/YanoneKaffeesatz-Light.woff") format("woff"),
+      url("./fonts/YanoneKaffeesatz-Light.ttf") format("ttf");
   font-style: normal;
   font-weight: 300;
   font-display: swap;

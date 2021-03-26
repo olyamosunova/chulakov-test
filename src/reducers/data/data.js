@@ -129,19 +129,17 @@ const Operations = {
         const xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                // console.log('responseText:' + xmlhttp.responseText);
                 try {
                     const data = JSON.parse(xmlhttp.responseText);
                     dispatch(ActionCreatorByData.loadPeople(data));
                     dispatch(ActionCreatorByData.changeIsLoadedFlag(false));
                 } catch(err) {
-                    // console.log(err.message + " in " + xmlhttp.responseText);
                     dispatch(ActionCreatorByData.changeIsLoadedFlag(false));
                 }
             }
         };
 
-        xmlhttp.open("GET", `${window.location.pathname}data/data.json`, true);
+        xmlhttp.open("GET", `/chulakov-test/data/data.json`, true);
         xmlhttp.send();
     }
 };
