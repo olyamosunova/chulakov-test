@@ -141,7 +141,7 @@ const Operations = {
             }
         };
 
-        xmlhttp.open("GET", '/data/data.json', true);git
+        xmlhttp.open("GET", '/data/data.json', true);
         xmlhttp.send();
     }
 };
