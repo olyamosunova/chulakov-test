@@ -210,7 +210,8 @@
   left: 0;
   padding: 5px 0;
   background-color: #1a3c34;
-  border-radius: 0 0 3px 3px; }
+  border-radius: 0 0 3px 3px;
+  z-index: 10; }
 
 .select__item {
   padding: 8px 32px 8px 24px;
