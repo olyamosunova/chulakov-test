@@ -22,6 +22,10 @@ module.exports = () => {
                     {
                         from: 'src/assets/videos',
                         to: './videos'
+                    },
+                    {
+                        from: 'src/data',
+                        to: './data'
                     }
                 ],
             }),

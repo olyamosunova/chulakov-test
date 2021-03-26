@@ -2,7 +2,7 @@
   "name": "chulakov",
   "version": "1.0.0",
   "description": "test exercise for CHULAKOV STUDIO",
-  "homepage": "http://olyamosunova.github.io/chulakov",
+  "homepage": "http://olyamosunova.github.io/chulakov-test",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
