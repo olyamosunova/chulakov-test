@@ -15,7 +15,6 @@ $color-text: #ffffff;
     }
 
     .select__placeholder::after {
-      top: calc(50% - 2px);
       transform: rotate(225deg);
     }
 
@@ -105,7 +104,7 @@ $color-text: #ffffff;
 }
 
 .select__item {
-  padding: 8px 32px 8px 24px;
+  padding: 9px 32px 9px 24px;
 
   color: $color-text;
   background-color: $background-color;
@@ -118,9 +117,7 @@ $color-text: #ffffff;
   outline: none;
 
   &--active {
-    opacity: 0.5;
-
-    cursor: auto;
+    display: none;
   }
 
   &:hover,
