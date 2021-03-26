@@ -26,6 +26,10 @@ module.exports = () => {
                     {
                         from: 'src/data',
                         to: './data'
+                    },
+                    {
+                        from: 'public/favicon.ico',
+                        to: './'
                     }
                 ],
             }),
